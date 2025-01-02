@@ -13,29 +13,34 @@
 </head>
 <body class="bg-[#F6F6F6]">
 
-    <header>
-        <div class="mx-5"> 
-            <nav class="navbar">
-              <!-- <a href="#" class="nav-branding">DEV.</a> -->
-              <div class="flex gap-2">
-              <img src="https://unicorn-images.b-cdn.net/9dfde078-3b3f-48ff-8b6c-e3ced321449b?optimizer=gif&width=168&height=40"
-              class="w-24 md:w-auto md:h-auto ml-1" alt=""> 
-              <p class="my-3 font-bold text-xs">Ai Business Solutions</p></div>
-              <ul class="nav-menu">
-                <li class="nav-item">
-                  <a href="#" class="nav-link">
-                    <button class="contact-button">Contact</button>
-                </a>
-                </li>
-              </ul>
-              <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-              </div>
-            </nav>
-         </div>
-       </header>
+  <header>
+    <div class="navbar">
+      <!-- Logo and Branding -->
+      <div class="flex">
+        <img src="https://unicorn-images.b-cdn.net/9dfde078-3b3f-48ff-8b6c-e3ced321449b?optimizer=gif&width=168&height=40" 
+         class="hover:opacity-75 w-28 h-10   " alt="Logo">
+        <p class=" m-3 text-sm font-bold text-[#3D3D3D]">Ai Business Solutions</p>
+      </div>
+  
+      <!-- Navigation Menu (Desktop) -->
+      <ul class="nav-menu">
+        <li class="nav-item">
+          <a href="#" class="nav-link">
+            <button class="text-sm px-2 py-2 mx-4 lg:mx-24 lg:my-4 border-2 border-[#164085] rounded-md bg-white text-[#164085]
+            hover:border-white hover:bg-[#164085] hover:text-white transform transition-transform duration-300 
+            hover:scale-110  focus:outline-none focus:ring-[#164085] shadow-lg shadow-indigo-500/40 hover:shadow-indigo-500/40">
+            Contact us</button>
+          </a>
+        </li>
+      </ul>
+  
+      <!-- Hamburger Icon (Mobile) -->
+      <div class="hamburger">
+        <i class="fa fa-bars text-xl"></i>
+        <i class="fa fa-times text-xl" style="display: none;"></i>
+      </div>
+    </div>
+  </header>
 <!-- Home Page Start-->
 <div class=" mx-4 lg:flex mx-2 lg:p-5 lg:justify-center lg:items-center ">
     <div class="flex flex-col justify-center items-center lg:items-start lg:justify-start gap-4 lg: w-full">
@@ -150,11 +155,14 @@
     <!-- Buttons Left and Right Arrow -->
     <div class="relative flex justify-start gap-10 items-start gap-10 lg:mx-32 hidden lg:block">
       <!-- Navigation Arrows -->
-      <button class=" mx-5 top-56 left-32 transform -translate-y-1/2 bg-[#A5B9DB] text-[#164085] 
-      p-2 rounded-full opacity-75 hover:opacity-100" onclick="prevSlide()">
+      <button class=" mx-5 top-56 left-32 transform -translate-y-1/2 bg-white text-[#164085] border-2 border-[#164085] 
+      hover:bg-[#164085] hover:text-white hover:border-white
+      p-2 " onclick="prevSlide()">
         <i class="fa-solid fa-arrow-left"></i>
       </button>
-      <button class=" top-56 right-20 transform -translate-y-1/2 bg-[#A5B9DB] text-[#164085] p-2 rounded-full opacity-75 hover:opacity-100" onclick="nextSlide()">
+      <button class=" top-56 right-20 transform -translate-y-1/2 bg-white text-[#164085] border-2 border-[#164085] 
+      hover:bg-[#164085] hover:text-white hover:border-white p-2
+       " onclick="nextSlide()">
         <i class="fa-solid fa-arrow-right"></i>
       </button>
       </div>
@@ -210,7 +218,7 @@
     </div>
 
     <div class="flex justify-center items-center ">
-        <button class="text-sm px-2 py-2 mx-4 border-2 border-[#164085] rounded-md bg-white text-[#164085]
+        <button class="text-sm px-2 py-2 mx-4 mb-10 border-2 border-[#164085] rounded-md bg-white text-[#164085]
         hover:border-white hover:bg-[#164085] hover:text-white transform transition-transform duration-300 
         hover:scale-110  focus:outline-none focus:ring-[#164085] shadow-lg shadow-indigo-500/40 hover:shadow-indigo-500/40">Add yours</button>
     </div>
@@ -220,26 +228,29 @@
 
 
 <!-- Ready to transform your business Page Start -->
-<div class=" my-4 ">
-    <div class="border border-[#164085] p-3 mx-6 rounded-md " >
+<div  id="Ready-transform">
+  <div class="flex flex-col justify-center items-center">
+    <div class="border border-white p-3 w-[80%] md:w-[80%] mx-6 my-20 md:my-16 rounded-md " >
         <div class="sm:flex sm:justify-center sm:items-center">
-            <h1 class="text-center  py-6 text-xl sm:text-3xl font-bold text-gray-700 px-4 sm:px-0 sm:w-80 md:w-96">Ready to transform your business with AI?</h1>
+            <h1 class="text-center text-white py-6 text-xl sm:text-3xl font-bold text-gray-700 px-4 sm:px-0 sm:w-80 md:w-96">Ready to transform your business with AI?</h1>
         </div>
-        <div class="sm:flex sm:justify-center sm:items-center sm:mx-32 md:mx-44">
-            <p class="text-center my-2 text-gray-600">Get in touch with us today.</p>
+        <div>
+            <p class="text-center font-bold text-gray-700">Get in touch with us today.</p>
         </div>
         <div class="flex justify-center items-center my-6">
             <button class="text-sm px-2 py-2 mx-4 border-2 border-[#164085] rounded-md bg-white text-[#164085]
-            hover:border-white hover:bg-[#164085] hover:text-white transform transition-transform duration-300 
-            hover:scale-110  focus:outline-none focus:ring-[#164085] shadow-lg shadow-indigo-500/40 hover:shadow-indigo-500/40">Contact Us</button>
+            hover:bg-[#164085] hover:text-white transform transition-transform duration-300 
+            hover:scale-110  focus:outline-none focus:ring-[#164085] shadow-lg shadow-indigo-500/40 
+            hover:shadow-indigo-500/40">Contact Us</button>
         </div>
     </div>
+  </div>
 </div>
 <!-- Ready to transform your business Page End -->
 
 
 <!-- Footer page Start-->
- <footer class="absolute md:w-full md:flex md:justify-between bg-[#202224] text-white">
+ <footer class="absolute w-full md:w-full md:flex md:justify-between bg-[#202224] text-white">
   <div class="mx-5 p-5 flex flex-col justify-center items-center md:justify-start md:items-start">
     <img src="https://unicorn-images.b-cdn.net/ae7276d6-eb11-4dad-a4b4-8fe9a1104477?optimizer=gif&width=159&height=37" 
     class="" alt="">
@@ -258,7 +269,8 @@
 <!-- Footer page End-->
 
 <!-- JavaScript -->
-<script src="script.js"></script>
+<script src="script.js"> </script>
+
 
 </body>
 </html>

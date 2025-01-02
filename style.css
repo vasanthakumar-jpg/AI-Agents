@@ -82,7 +82,26 @@ a{
 
 }
 
-
+#Ready-transform {
+  background-image: url('https://unicorn-images.b-cdn.net/b0e121c4-9c33-4299-b938-e6ac34746e2a?optimizer=gif%27'); /* Replace with your image URL */
+  background-size: cover; /* Ensures the image covers the entire div */
+  background-position: center; /* Centers the image within the div */
+  background-repeat: no-repeat; /* Prevents tiling of the image */
+  width: 100%;
+  height: 400px;
+  filter: brightness(100%);
+   /* Adjust height as needed */
+}
+/* @media(max-width:320px) {
+  #Ready-transform{
+    height: 400px;
+  }
+}
+@media(max-width:425px) {
+  #Ready-transform{
+    height: 400px;
+  }
+} */
 @media(max-width:1024px){
   .hamburger{
     display: block;

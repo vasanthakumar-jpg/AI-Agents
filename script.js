@@ -1,3 +1,25 @@
+document.addEventListener('DOMContentLoaded', () => {
+  const hamburger = document.querySelector('.hamburger');
+  const navMenu = document.querySelector('.nav-menu');
+  const barsIcon = hamburger.querySelector('.fa-bars');
+  const closeIcon = hamburger.querySelector('.fa-times');
+
+  hamburger.addEventListener('click', () => {
+    navMenu.classList.toggle('active');
+    hamburger.classList.toggle('open');
+    // Toggle display of icons
+    if (hamburger.classList.contains('open')) {
+      barsIcon.style.display = 'none';
+      closeIcon.style.display = 'block';
+    } else {
+      barsIcon.style.display = 'block';
+      closeIcon.style.display = 'none';
+    }
+  });
+});
+
+
+
 const carousel = document.getElementById("carousel");
 const dots = document.getElementById("dots").children;
 const slides = carousel.children;
