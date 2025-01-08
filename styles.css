@@ -1,17 +1,12 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-
 *{
   padding: 0;
   margin: 0;
   /* overflow-x: hidden; */
 }
 
-header{
+/* header{
   background-color: #ffffff;
-}
+} */
 
 li{
   list-style: none;

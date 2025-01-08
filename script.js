@@ -30,7 +30,7 @@ let isTransitioning = false;
 // Update active dot
 function updateDots(index) {
   Array.from(dots).forEach((dot, i) => {
-    dot.classList.toggle("bg-blue-500", i === index - 1);
+    dot.classList.toggle("bg-[#164085]", i === index - 1);
     dot.classList.toggle("bg-gray-300", i !== index - 1);
   });
 }

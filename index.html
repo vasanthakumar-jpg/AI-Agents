@@ -9,24 +9,44 @@
   integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
    crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@300;400;500;600;700&family=Gudea:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome CDN -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-</head>
-<body class="bg-[#F6F6F6]">
+    <script>
+      tailwind.config = {
+          theme: {
+              extend: {
+                screen : {
+                  "2xs" : "320px",
+                  "base" : "500px",
+                  "sm" : "620px"
+                },
+                  fontFamily: {
+                      gudea: ["Gudea", "Helvetica", "sans-serif"],
+                      bai: ["Bai Jamjuree", "Helvetica", "sans-serif"],
+                  },
+              },
+          },
+      };
+  </script>
+  </head>
+<body class="bg-[#FFFFFF]">
 
-  <header>
+  <header class=" px-2 xl:px-32">
     <div class="navbar">
       <!-- Logo and Branding -->
       <div class="flex mx-1 gap-3">
         <img src="https://unicorn-images.b-cdn.net/9dfde078-3b3f-48ff-8b6c-e3ced321449b?optimizer=gif&width=168&height=40" 
-         class="h-6 md:h-10" alt="Logo">
-        <p class="my-1 md:my-3 text-xs md:text-sm md:font-bold font-medium text-[#3D3D3D]">Ai Business Solutions</p>
+         class="h-[40px] " alt="Logo">
+        <!-- <p class="my-1 md:my-3 text-xs md:text-sm md:font-bold font-medium text-[#3D3D3D] hidden">Ai Business Solutions</p> -->
       </div>
   
       <!-- Navigation Menu (Desktop) -->
       <!-- <ul class="nav-menu">
         <li class="nav-item">
           <a href="#" class="nav-link"> -->
-            <button class=" text-xs md:text-sm mx-1 md:mx-4 px-2 py-2  lg:my-4 border-2 border-[#164085] rounded-md bg-white text-[#164085]
+            <button class=" text-sm mx-1 md:mx-4 px-2 py-2  lg:my-4 border-2 border-[#164085] rounded-md bg-white text-[#164085]
             hover:border-white hover:bg-[#164085] hover:text-white transform transition-transform duration-300 
             hover:scale-110  focus:outline-none focus:ring-[#164085] shadow-lg shadow-indigo-500/40 hover:shadow-indigo-500/40">
             Contact us</button>
@@ -42,18 +62,22 @@
     </div>
   </header>
 <!-- Home Page Start-->
-<div class=" mx-4 lg:flex lg:justify-center lg:items-center p-5">
-    <div class="flex flex-col justify-center items-center lg:items-start lg:justify-start w-full lg:w-1/2 ">
-        <h1 class=" text-xl md:text-2xl my-2 font-bold text-center lg:text-left ">AI Agents & Assistants for your business use cases in operations & customer service</h1>
-        <div >
-          <p class=" text-lg my-2 text-center lg:text-left font-medium ">Your AI implementation partner for global businesses in technology & healthcare domains</p>
+<div class=" mx-4 lg:flex lg:justify-center lg:items-center xl:px-32 2xs:px-2 2xs:py-5 md:p-5">
+  
+  <div class="flex flex-col justify-center items-center lg:items-start lg:justify-start w-full lg:w-1/2 ">
+  <div class="sm:w-[80%] lg:w-full  flex justify-center items-center">
+        <h1 class="text-[32px] md:text-[40px] lg:text-5xl my-[24px] font-bold text-center
+         lg:text-left font-bai">AI Agents & Assistants for your business use cases in operations & customer service</h1>
+  </div>
+        <div class="my-[9px] font-bold">
+          <p class=" text-[19px] my-2 text-center lg:text-left font-bai text-[#303030]">Your AI implementation partner for global businesses in technology & healthcare domains</p>
         </div>
         <div>
             <button class="my-6 text-sm px-2 py-2 lg:my-4 border-2 border-[#164085] rounded-md bg-white 
             text-[#164085]
             hover:border-white hover:bg-[#164085] hover:text-white transform transition-transform duration-300 
-            hover:scale-110  focus:outline-none focus:ring-[#164085] shadow-lg shadow-indigo-500/40 
-            hover:shadow-indigo-500/40">
+            hover:scale-110  focus:outline-none focus:ring-[#164085] shadow-lg shadow-indigo-500/40 font-gudea
+            hover:shadow-indigo-500/40 text-sm">
             Book your free case consult session</button>
         </div>
     </div>
@@ -68,12 +92,13 @@
 <!-- Home Page End -->
 
 <!-- AI Use case Page Start -->
-<div>
+<div class="xl:px-32 bg-[#F6F6F6]">
     <!-- First Center div -->
     <div class="flex flex-col justify-center items-center mx-4 overflow-hidden ">
-      <div class=" w-full md:w-[65%] lg:w-[45%] xl:w-[40%]">
-        <h1 class="font-bold text-2xl text-center break-words">AI use cases for your business</h1>
-        <p class=" md:text-lg break-words text-center my-4">We specialize in AI implementation for various use cases and integration with your existing business and software systems</p>
+      <div class="  md:w-[65%] lg:w-[45%] xl:w-[45%] flex flex-col justify-center items-center">
+        <h1 class="font-bold text-2xl text-center break-words 2xs:text-2xl md:text-[27px] lg:text-[32px] 
+        my-[12px] font-bai text-[#303030]">AI use cases for your business</h1>
+        <p class=" md:text-lg break-words text-center my-4 text-base font-gudea text-[#3D3D3D]">We specialize in AI implementation for various use cases and integration with your existing business and software systems</p>
       </div>
     </div>
 
@@ -106,8 +131,8 @@
               </g>
             </svg>
            <!-- Circle Icon End -->
-          <h2 class="text-lg font-bold my-2">Customer Service & AI virtual assistant</h2>
-          <p class="py-3 ">Enhance your customer service with 2 way human like conversational AI</p>
+          <h2 class="text-lg font-bold font-bai my-2 text-xl text-[#303030]">Customer Service & AI virtual assistant</h2>
+          <p class="py-3 text-base font-gudea text-base text-[#3D3D3D] ">Enhance your customer service with 2 way human like conversational AI</p>
         </div>
     
         <!-- Second Div -->
@@ -130,14 +155,14 @@
               </g>
             </svg>
            <!-- Circle Icon End -->
-          <h2 class="text-lg font-bold my-2">Process Automation</h2>
-          <p class="py-3 ">Streamline your internal processes, cross tool & team operations with AI agents & automation</p>
+          <h2 class="text-lg font-bold font-bai my-2 text-xl text-[#303030]">Process Automation</h2>
+          <p class="py-3 text-base font-gudea text-base text-[#3D3D3D]">Streamline your internal processes, cross tool & team operations with AI agents & automation</p>
         </div>
     </div>
 
     <!-- Another Two Divs -->
       <div class="md:gap-4 md:flex md:justify-center md:items-center my-6 overflow-hidden">
-    <div class="flex flex-col md:flex-row gap-4 md:gap-6 mx-4 w-full md:w-[60%] ">
+      <div class="flex flex-col md:flex-row gap-4 md:gap-6 mx-4 w-full md:w-[60%] ">
         <!-- First Div -->
         <div class="bg-white rounded-lg shadow-lg w-[92%] md:w-[80%] p-6">
           <!-- Circle Icon Start -->
@@ -159,8 +184,8 @@
           </g>
         </svg>
           <!-- Circle Icon End -->
-          <h2 class="text-lg font-bold py-2">AI search and chatbot for teams and organisations</h2>
-          <p class="py-3">Seamlessly search across all your organisational tools to find information and data</p>
+          <h2 class="text-lg font-bold font-bai my-2 text-xl text-[#303030]">AI search and chatbot for teams and organisations</h2>
+          <p class="py-3 text-base font-gudea text-base text-[#3D3D3D]">Seamlessly search across all your organisational tools to find information and data</p>
         </div>
     
         <!-- Second Div -->
@@ -191,27 +216,30 @@
             </g>
           </svg>
             <!-- Circle Icon End -->
-            <h2 class="text-lg font-bold py-2">AI Integration with Existing Software</h2>
-            <p class=" py-3">Integrate AI capabilities into your existing business software for enhanced functionality</p>
-          </div>
-       
-    </div>
+            <h2 class="text-lg font-bold font-bai my-2 text-xl text-[#303030]">AI Integration with Existing Software</h2>
+            <p class="py-3 text-base font-gudea text-base3 text-[#3D3D3D]">Integrate AI capabilities into your existing business software for enhanced functionality</p>
+        </div>
+
+      </div>
+    
   </div>
   
-    <div class="flex justify-center items-center my-6 ">
-      <button class="text-sm px-2 py-2 mx-4 border-2 border-[#164085] rounded-md bg-white text-[#164085]
-      hover:border-white hover:bg-[#164085] hover:text-white transform transition-transform duration-300 
-      hover:scale-110  focus:outline-none focus:ring-[#164085] shadow-lg shadow-indigo-500/40 hover:shadow-indigo-500/40">Submit my custom case</button>
-  </div>
+      <div class="flex justify-center items-center py-12">
+        <button class="text-sm px-2 py-2 mx-4 border-2 border-[#164085] rounded-md bg-white text-[#164085]
+        hover:border-white hover:bg-[#164085] hover:text-white transform transition-transform duration-300 
+        hover:scale-110  focus:outline-none focus:ring-[#164085] shadow-lg shadow-indigo-500/40 hover:shadow-indigo-500/40">Submit my custom case</button>
+    </div>
     
 </div>
 <!-- AI Use case Page End-->
 
 <!-- Client Carosel Page Start -->
-<div class="bg-gray-100">
-    <div class="p-5">
-        <h1 class="text-2xl font-bold text-center">What Our Clients Say</h1>
-        <p class="text-center">Hear from our satisfied clients</p>
+<div class="bg-[#F6F6F6] xl:px-32">
+    <div class="p-5 flex justify-center items-center">
+      <div class="md:w-1/2 flex flex-col justify-center items-center">
+        <h1 class="text-[24px] md:text-[27px] lg:text-[32px]  font-bold font-bai text-center text-[#303030]">What Our Clients Say</h1>
+        <p class="text-center text-base my-4 text-[#3D3D3D]">Hear from our satisfied clients</p>
+      </div>
     </div>
 
     <!-- Carosel  -->
@@ -223,29 +251,29 @@
           <!-- Cloned Slide (Last) -->
           <div class="flex-shrink-0 w-[90%] snap-center bg-white rounded-lg flex flex-col justify-center 
           h-64 sm:h-64 md:h-72 lg:h-72 p-4 md:p-6">
-            <p class="text-base md:py-2 lg:text-center">myaicase automated internal search and other processes for our ed-tech operations</p>
-            <p class="mt-2 text-sm md:text-base lg:text-lg font-bold lg:text-center">ARAVINDH, C0-FOUNDER OF ASPIREMOCK</p>
+            <p class="text-base md:py-2 lg:text-center text-[#3D3D3D]">myaicase automated internal search and other processes for our ed-tech operations</p>
+            <p class="mt-2 text-xs font-bold lg:text-center text-[#3D3D3D]">ARAVINDH, C0-FOUNDER OF ASPIREMOCK</p>
           </div>
           <!-- Original Slides -->
           <div class="flex-shrink-0 w-full snap-center bg-white rounded-lg flex flex-col justify-center h-64 sm:h-64 md:h-72 lg:h-72 p-4 md:p-6">
-            <p class="text-base md:py-2 lg:text-center">myaicase has transformed our insurnace verification with their AI implementation.</p>
-            <p class="mt-2 text-sm md:text-base lg:text-lg font-bold lg:text-center">KARTHIK, C0-FOUNDER OF ORTHOBERRY INC</p>
+            <p class="text-base md:py-2 lg:text-center text-[#3D3D3D]">myaicase has transformed our insurnace verification with their AI implementation.</p>
+            <p class="mt-2 text-xs font-bold lg:text-center text-[#3D3D3D]">KARTHIK, C0-FOUNDER OF ORTHOBERRY INC</p>
           </div>
           <div class="flex-shrink-0 w-full snap-center bg-white rounded-lg flex flex-col  justify-center h-64 sm:h-64 md:h-72 lg:h-72 p-4 md:p-6">
-            <p class="text-base md:py-2 lg:text-center">myaicase automated internal search and other processes for our ed-tech operations</P>
-            <p class="t-2 text-sm md:text-base lg:text-lg font-bold lg:text-center">Aravindh, C0-FOUNDER OF Aspiremock</p>
+            <p class="text-base md:py-2 lg:text-center text-[#3D3D3D]">myaicase automated internal search and other processes for our ed-tech operations</P>
+            <p class="mt-2 text-xs font-bold lg:text-center text-[#3D3D3D]">Aravindh, C0-FOUNDER OF Aspiremock</p>
           </div>
           <!-- Cloned Slide (First) -->
           <div class="flex-shrink-0 w-full snap-center bg-white rounded-lg flex flex-col justify-center h-64 sm:h-64 md:h-72 lg:h-72 p-4 md:p-6">
-            <P class="text-base md:py-2 lg:text-center">myaicase has transformed our insurnace verification with their AI implementation.</P>
-            <p class="mt-2 text-sm md:text-base lg:text-lg font-bold lg:text-center">KARTHIK, C0-FOUNDER OF ORTHOBERRY INC</p>
+            <P class="text-base md:py-2 lg:text-center text-[#3D3D3D]">myaicase has transformed our insurnace verification with their AI implementation.</P>
+            <p class="mt-2 text-xs font-bold lg:text-center text-[#3D3D3D]">KARTHIK, C0-FOUNDER OF ORTHOBERRY INC</p>
           </div>
         </div>
     
         
         <!-- Dots -->
         <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2" id="dots">
-          <button class="w-3 h-3 bg-blue-500 rounded-full" onclick="goToSlide(1)"></button>
+          <button class="w-3 h-3 bg-[#164085] rounded-full" onclick="goToSlide(1)"></button>
           <button class="w-3 h-3 bg-gray-300 rounded-full" onclick="goToSlide(2)"></button>
         </div>
       </div>
@@ -264,8 +292,8 @@
         <i class="fa-solid fa-arrow-right"></i>
       </button>
       </div>
-    <div class="flex justify-center items-center  ">
-        <button class=" mb-10 text-base px-2 py-2 mx-4 border-2 border-[#164085] rounded-md bg-white text-[#164085]
+    <div class="flex justify-center items-center p-5 md:p-10 ">
+        <button class=" flex justify-center items-center text-sm px-2 py-2 mx-4 border-2 border-[#164085] rounded-md bg-white text-[#164085]
         hover:border-white hover:bg-[#164085] hover:text-white transform transition-transform duration-300 
         hover:scale-110  focus:outline-none focus:ring-[#164085] shadow-lg shadow-indigo-500/40 hover:shadow-indigo-500/40">Be one among these</button>
     </div>
@@ -276,42 +304,165 @@
 
 
 <!-- Frequently Asked Questions Page Start -->
-<div>
+<div class="xl:px-32">
     <div class="p-5">
-        <h1 class="text-xl sm:text-2xl font-bold text-center">Frequently Asked Questions</h1>
-        <p class="text-center">Have questions? We have answers.</p>
+        <h1 class="text-[24px] md:text-[27px] lg:text-[32px] font-bold text-center text-[#303030]">Frequently Asked Questions</h1>
+        <p class="text-center my-4 text-[#3D3D3D]">Have questions? We have answers.</p>
     </div>
     <!-- Frequent Asked Question -->
     <div class="grid md:grid-cols-2 grid-cols-1 mx-2 md:mx-4">
-        <div class="p-5">
-            <h1 class=" text-lg sm:text-2xl font-bold text-[#164085] ">What industries do you serve?</h1>
-            <p class="text-[#858585] py-3">We specialise in heatlhcare and technology domains with close to a decade of experience in these areas</p>
-        </div>
-
-        <div class="p-5">
-            <h1 class="text-lg sm:text-2xl font-bold text-[#164085]">What are use cases where AI is highly effective for businesses?</h1>
-            <p class="text-[#858585] py-3">Customer support chatbot, AI based search, Reporting automation, Workflow automation and much more</p>
-        </div>
-
-        <div class="p-5">
-            <h1 class="text-lg sm:text-2xl font-bold text-[#164085]">How can AI assistants benefit my business?</h1>
-            <p class="text-[#858585] py-3">AI assistants can automate repetitive tasks, provide 24/7 customer support, and offer personalized recommendations to your customers, thereby improving efficiency and customer satisfaction.</p>
-        </div>
-       
-        <div class="p-5">
-            <h1 class="text-lg sm:text-2xl font-bold text-[#164085]">What is involved in AI agents implementation?</h1>
-            <p class="text-[#858585] py-3">AI agents implementation involves understanding your business needs, designing an AI solution, integrating it with your existing systems, training the AI with relevant data, and finally deploying and monitoring the AI agent.</p>
-        </div>
-       
-        <div class="p-5">
-            <h1 class="text-lg sm:text-2xl font-bold text-[#164085] ">What is the difference between AI agents and AI assistants?</h1>
-            <p class="text-[#858585] py-3">AI agents are autonomous entities that can understand, learn, and make decisions based on their environment. AI assistants, on the other hand, are designed to assist users in performing tasks and usually require some level of human input.</p>
-        </div>
       
-        <div class="p-5">
-            <h1 class="text-lg sm:text-2xl font-bold text-[#164085]">How can AI agents be integrated into my existing systems?</h1>
-            <p class="text-[#858585] py-3">AI agents can be integrated into your existing systems through APIs, custom coding, or through the use of integration platforms. The method of integration will depend on your specific systems and requirements.</p>
+      <div class="py-4 px-2 flex">
+        <div class="flex flex-col">
+            <div class="sm:flex sm:items-center sm:gap-2">
+                <!-- Help Icon Container -->
+                <span class="hidden sm:block max-[500px]:hidden w-10 h-10 rounded-full hover:bg-blue-200
+                 transition duration-300 flex items-center justify-center">
+                    <svg width="20px" height="20px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                        <g fill="none" fill-rule="evenodd">
+                            <g fill="#164085" class="fill-main">
+                                <path d="M7.7549375,10.725625 C7.29746875,10.725625 6.92709375,11.106875 6.92709375,11.564375 C6.92709375,12.0109687 7.2865625,12.403125 7.7549375,12.403125 C8.2233125,12.403125 8.5936875,12.011 8.5936875,11.564375 C8.5936875,11.106875 8.21246875,10.725625 7.7549375,10.725625 Z"></path>
+                                <path d="M5.18339825,6.43681645 C5.18339825,6.09664548 5.29260939,5.75200375 5.51103497,5.40288091 C5.72946054,5.05375807 6.04814225,4.76461708 6.46708965,4.53544927 C6.88603706,4.30628145 7.3748017,4.19169927 7.93339825,4.19169927 C8.45260657,4.19169927 8.91093532,4.28748281 9.30839825,4.47905278 C9.70586117,4.67062275 10.0129056,4.93111819 10.2295408,5.26054692 C10.446176,5.58997565 10.554492,5.94804499 10.554492,6.33476567 C10.554492,6.63912917 10.492725,6.90589083 10.3691893,7.13505864 C10.2456535,7.36422645 10.0988451,7.56205976 9.92875957,7.7285645 C9.75867409,7.89506924 9.45341998,8.17525849 9.01298809,8.56914067 C8.89124269,8.68014383 8.7936688,8.77771773 8.72026348,8.86186528 C8.64685817,8.94601284 8.59225259,9.02299775 8.55644512,9.09282231 C8.52063765,9.16264688 8.49288728,9.2324704 8.47319317,9.30229497 C8.45349906,9.37211954 8.42395834,9.49475828 8.38457012,9.67021489 C8.31653593,10.0426126 8.10348467,10.2288086 7.74540997,10.2288086 C7.55921112,10.2288086 7.40255578,10.1679369 7.27543926,10.0461915 C7.14832274,9.92444605 7.08476543,9.74362104 7.08476543,9.50371099 C7.08476543,9.20292823 7.13131445,8.94243279 7.22441387,8.72221684 C7.3175133,8.5020009 7.44104722,8.30864346 7.59501934,8.14213872 C7.74899146,7.97563398 7.95667168,7.77780067 8.21806622,7.54863286 C8.44723403,7.34811102 8.6128411,7.19682673 8.71489239,7.09477544 C8.81694368,6.99272415 8.90288032,6.87903713 8.97270489,6.75371099 C9.04252946,6.62838484 9.07744122,6.49231849 9.07744122,6.34550786 C9.07744122,6.05904809 8.97091559,5.81735129 8.75786114,5.6204102 C8.54480669,5.42346912 8.26998847,5.32500005 7.93339825,5.32500005 C7.53951607,5.32500005 7.24947991,5.42436429 7.06328106,5.62309575 C6.87708221,5.82182721 6.7195317,6.1145489 6.59062481,6.50126958 C6.46887941,6.905894 6.23792469,7.10820317 5.89775372,7.10820317 C5.69723188,7.10820317 5.52804412,7.03748448 5.39018536,6.89604497 C5.25232659,6.75460546 5.18339825,6.60153082 5.18339825,6.43681645 Z"></path>
+                                <path d="M8,0 C3.578625,0 -8.8812421e-16,3.57803125 -8.8812421e-16,8 L5.42101086e-20,15.4799995 C5.42101086e-20,15.825187 0.174812481,16 0.519999981,16 L8,16 C12.4213438,16 16,12.4219687 16,8 C16,3.578625 12.4219687,0 8,0 Z M8,14.75 L1.25,14.75 L1.25,8 C1.25,4.26946875 4.26896875,1.25 8,1.25 C11.7305313,1.25 14.75,4.26896875 14.75,8 C14.75,11.7305313 11.7310312,14.75 8,14.75 Z" fill-opacity="0.3"></path>
+                            </g>
+                        </g>
+                    </svg>
+                </span>
+                <!-- Help Icon Container End -->
+                <h1 class="text-[20px] font-bold text-[#164085]">What are use cases where AI is highly effective for businesses?</h1>
+            </div>
+            <p class="text-[#3D3D3D] text-base py-3 sm:px-10 md:px-7 lg:px-10 xl:px-11">
+                Customer support chatbot, AI-based search, Reporting automation, Workflow automation, and much more
+            </p>
         </div>
+      </div>
+    
+      <div class="py-4 px-2 flex">
+        <div class="flex flex-col">
+            <div class="sm:flex sm:items-center sm:gap-2">
+                <!-- Help Icon Container -->
+                <span class="hidden sm:block max-[500px]:hidden w-10 h-10 rounded-full hover:bg-blue-200
+                 transition duration-300 flex items-center justify-center">
+                    <svg width="20px" height="20px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                        <g fill="none" fill-rule="evenodd">
+                            <g fill="#164085" class="fill-main">
+                                <path d="M7.7549375,10.725625 C7.29746875,10.725625 6.92709375,11.106875 6.92709375,11.564375 C6.92709375,12.0109687 7.2865625,12.403125 7.7549375,12.403125 C8.2233125,12.403125 8.5936875,12.011 8.5936875,11.564375 C8.5936875,11.106875 8.21246875,10.725625 7.7549375,10.725625 Z"></path>
+                                <path d="M5.18339825,6.43681645 C5.18339825,6.09664548 5.29260939,5.75200375 5.51103497,5.40288091 C5.72946054,5.05375807 6.04814225,4.76461708 6.46708965,4.53544927 C6.88603706,4.30628145 7.3748017,4.19169927 7.93339825,4.19169927 C8.45260657,4.19169927 8.91093532,4.28748281 9.30839825,4.47905278 C9.70586117,4.67062275 10.0129056,4.93111819 10.2295408,5.26054692 C10.446176,5.58997565 10.554492,5.94804499 10.554492,6.33476567 C10.554492,6.63912917 10.492725,6.90589083 10.3691893,7.13505864 C10.2456535,7.36422645 10.0988451,7.56205976 9.92875957,7.7285645 C9.75867409,7.89506924 9.45341998,8.17525849 9.01298809,8.56914067 C8.89124269,8.68014383 8.7936688,8.77771773 8.72026348,8.86186528 C8.64685817,8.94601284 8.59225259,9.02299775 8.55644512,9.09282231 C8.52063765,9.16264688 8.49288728,9.2324704 8.47319317,9.30229497 C8.45349906,9.37211954 8.42395834,9.49475828 8.38457012,9.67021489 C8.31653593,10.0426126 8.10348467,10.2288086 7.74540997,10.2288086 C7.55921112,10.2288086 7.40255578,10.1679369 7.27543926,10.0461915 C7.14832274,9.92444605 7.08476543,9.74362104 7.08476543,9.50371099 C7.08476543,9.20292823 7.13131445,8.94243279 7.22441387,8.72221684 C7.3175133,8.5020009 7.44104722,8.30864346 7.59501934,8.14213872 C7.74899146,7.97563398 7.95667168,7.77780067 8.21806622,7.54863286 C8.44723403,7.34811102 8.6128411,7.19682673 8.71489239,7.09477544 C8.81694368,6.99272415 8.90288032,6.87903713 8.97270489,6.75371099 C9.04252946,6.62838484 9.07744122,6.49231849 9.07744122,6.34550786 C9.07744122,6.05904809 8.97091559,5.81735129 8.75786114,5.6204102 C8.54480669,5.42346912 8.26998847,5.32500005 7.93339825,5.32500005 C7.53951607,5.32500005 7.24947991,5.42436429 7.06328106,5.62309575 C6.87708221,5.82182721 6.7195317,6.1145489 6.59062481,6.50126958 C6.46887941,6.905894 6.23792469,7.10820317 5.89775372,7.10820317 C5.69723188,7.10820317 5.52804412,7.03748448 5.39018536,6.89604497 C5.25232659,6.75460546 5.18339825,6.60153082 5.18339825,6.43681645 Z"></path>
+                                <path d="M8,0 C3.578625,0 -8.8812421e-16,3.57803125 -8.8812421e-16,8 L5.42101086e-20,15.4799995 C5.42101086e-20,15.825187 0.174812481,16 0.519999981,16 L8,16 C12.4213438,16 16,12.4219687 16,8 C16,3.578625 12.4219687,0 8,0 Z M8,14.75 L1.25,14.75 L1.25,8 C1.25,4.26946875 4.26896875,1.25 8,1.25 C11.7305313,1.25 14.75,4.26896875 14.75,8 C14.75,11.7305313 11.7310312,14.75 8,14.75 Z" fill-opacity="0.3"></path>
+                            </g>
+                        </g>
+                    </svg>
+                </span>
+                <!-- Help Icon Container End -->
+                <h1 class="text-[20px] font-bold text-[#164085]">What are use cases where AI is highly effective for businesses?</h1>
+            </div>
+            <p class="text-[#3D3D3D] text-base py-3 sm:px-10 md:px-7 lg:px-10 xl:px-11 ">
+                Customer support chatbot, AI-based search, Reporting automation, Workflow automation, and much more
+            </p>
+        </div>
+      </div>
+
+      <div class="py-4 px-2 flex">
+        <div class="flex flex-col">
+            <div class="sm:flex sm:items-center sm:gap-2">
+                <!-- Help Icon Container -->
+                <span class="hidden sm:block max-[500px]:hidden w-10 h-10 rounded-full hover:bg-blue-200
+                 transition duration-300 flex items-center justify-center">
+                    <svg width="20px" height="20px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                        <g fill="none" fill-rule="evenodd">
+                            <g fill="#164085" class="fill-main">
+                                <path d="M7.7549375,10.725625 C7.29746875,10.725625 6.92709375,11.106875 6.92709375,11.564375 C6.92709375,12.0109687 7.2865625,12.403125 7.7549375,12.403125 C8.2233125,12.403125 8.5936875,12.011 8.5936875,11.564375 C8.5936875,11.106875 8.21246875,10.725625 7.7549375,10.725625 Z"></path>
+                                <path d="M5.18339825,6.43681645 C5.18339825,6.09664548 5.29260939,5.75200375 5.51103497,5.40288091 C5.72946054,5.05375807 6.04814225,4.76461708 6.46708965,4.53544927 C6.88603706,4.30628145 7.3748017,4.19169927 7.93339825,4.19169927 C8.45260657,4.19169927 8.91093532,4.28748281 9.30839825,4.47905278 C9.70586117,4.67062275 10.0129056,4.93111819 10.2295408,5.26054692 C10.446176,5.58997565 10.554492,5.94804499 10.554492,6.33476567 C10.554492,6.63912917 10.492725,6.90589083 10.3691893,7.13505864 C10.2456535,7.36422645 10.0988451,7.56205976 9.92875957,7.7285645 C9.75867409,7.89506924 9.45341998,8.17525849 9.01298809,8.56914067 C8.89124269,8.68014383 8.7936688,8.77771773 8.72026348,8.86186528 C8.64685817,8.94601284 8.59225259,9.02299775 8.55644512,9.09282231 C8.52063765,9.16264688 8.49288728,9.2324704 8.47319317,9.30229497 C8.45349906,9.37211954 8.42395834,9.49475828 8.38457012,9.67021489 C8.31653593,10.0426126 8.10348467,10.2288086 7.74540997,10.2288086 C7.55921112,10.2288086 7.40255578,10.1679369 7.27543926,10.0461915 C7.14832274,9.92444605 7.08476543,9.74362104 7.08476543,9.50371099 C7.08476543,9.20292823 7.13131445,8.94243279 7.22441387,8.72221684 C7.3175133,8.5020009 7.44104722,8.30864346 7.59501934,8.14213872 C7.74899146,7.97563398 7.95667168,7.77780067 8.21806622,7.54863286 C8.44723403,7.34811102 8.6128411,7.19682673 8.71489239,7.09477544 C8.81694368,6.99272415 8.90288032,6.87903713 8.97270489,6.75371099 C9.04252946,6.62838484 9.07744122,6.49231849 9.07744122,6.34550786 C9.07744122,6.05904809 8.97091559,5.81735129 8.75786114,5.6204102 C8.54480669,5.42346912 8.26998847,5.32500005 7.93339825,5.32500005 C7.53951607,5.32500005 7.24947991,5.42436429 7.06328106,5.62309575 C6.87708221,5.82182721 6.7195317,6.1145489 6.59062481,6.50126958 C6.46887941,6.905894 6.23792469,7.10820317 5.89775372,7.10820317 C5.69723188,7.10820317 5.52804412,7.03748448 5.39018536,6.89604497 C5.25232659,6.75460546 5.18339825,6.60153082 5.18339825,6.43681645 Z"></path>
+                                <path d="M8,0 C3.578625,0 -8.8812421e-16,3.57803125 -8.8812421e-16,8 L5.42101086e-20,15.4799995 C5.42101086e-20,15.825187 0.174812481,16 0.519999981,16 L8,16 C12.4213438,16 16,12.4219687 16,8 C16,3.578625 12.4219687,0 8,0 Z M8,14.75 L1.25,14.75 L1.25,8 C1.25,4.26946875 4.26896875,1.25 8,1.25 C11.7305313,1.25 14.75,4.26896875 14.75,8 C14.75,11.7305313 11.7310312,14.75 8,14.75 Z" fill-opacity="0.3"></path>
+                            </g>
+                        </g>
+                    </svg>
+                </span>
+                <!-- Help Icon Container End -->
+                <h1 class="text-[20px] font-bold text-[#164085]">What are use cases where AI is highly effective for businesses?</h1>
+            </div>
+            <p class="text-[#3D3D3D] text-base py-3 sm:px-10 md:px-7 lg:px-10 xl:px-11 ">
+                Customer support chatbot, AI-based search, Reporting automation, Workflow automation, and much more
+            </p>
+        </div>
+      </div>
+
+      <div class="py-4 px-2 flex">
+        <div class="flex flex-col">
+            <div class="sm:flex sm:items-center sm:gap-2">
+                <!-- Help Icon Container -->
+                <span class="hidden sm:block max-[500px]:hidden w-10 h-10 rounded-full hover:bg-blue-200
+                 transition duration-300 flex items-center justify-center">
+                    <svg width="20px" height="20px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                        <g fill="none" fill-rule="evenodd">
+                            <g fill="#164085" class="fill-main">
+                                <path d="M7.7549375,10.725625 C7.29746875,10.725625 6.92709375,11.106875 6.92709375,11.564375 C6.92709375,12.0109687 7.2865625,12.403125 7.7549375,12.403125 C8.2233125,12.403125 8.5936875,12.011 8.5936875,11.564375 C8.5936875,11.106875 8.21246875,10.725625 7.7549375,10.725625 Z"></path>
+                                <path d="M5.18339825,6.43681645 C5.18339825,6.09664548 5.29260939,5.75200375 5.51103497,5.40288091 C5.72946054,5.05375807 6.04814225,4.76461708 6.46708965,4.53544927 C6.88603706,4.30628145 7.3748017,4.19169927 7.93339825,4.19169927 C8.45260657,4.19169927 8.91093532,4.28748281 9.30839825,4.47905278 C9.70586117,4.67062275 10.0129056,4.93111819 10.2295408,5.26054692 C10.446176,5.58997565 10.554492,5.94804499 10.554492,6.33476567 C10.554492,6.63912917 10.492725,6.90589083 10.3691893,7.13505864 C10.2456535,7.36422645 10.0988451,7.56205976 9.92875957,7.7285645 C9.75867409,7.89506924 9.45341998,8.17525849 9.01298809,8.56914067 C8.89124269,8.68014383 8.7936688,8.77771773 8.72026348,8.86186528 C8.64685817,8.94601284 8.59225259,9.02299775 8.55644512,9.09282231 C8.52063765,9.16264688 8.49288728,9.2324704 8.47319317,9.30229497 C8.45349906,9.37211954 8.42395834,9.49475828 8.38457012,9.67021489 C8.31653593,10.0426126 8.10348467,10.2288086 7.74540997,10.2288086 C7.55921112,10.2288086 7.40255578,10.1679369 7.27543926,10.0461915 C7.14832274,9.92444605 7.08476543,9.74362104 7.08476543,9.50371099 C7.08476543,9.20292823 7.13131445,8.94243279 7.22441387,8.72221684 C7.3175133,8.5020009 7.44104722,8.30864346 7.59501934,8.14213872 C7.74899146,7.97563398 7.95667168,7.77780067 8.21806622,7.54863286 C8.44723403,7.34811102 8.6128411,7.19682673 8.71489239,7.09477544 C8.81694368,6.99272415 8.90288032,6.87903713 8.97270489,6.75371099 C9.04252946,6.62838484 9.07744122,6.49231849 9.07744122,6.34550786 C9.07744122,6.05904809 8.97091559,5.81735129 8.75786114,5.6204102 C8.54480669,5.42346912 8.26998847,5.32500005 7.93339825,5.32500005 C7.53951607,5.32500005 7.24947991,5.42436429 7.06328106,5.62309575 C6.87708221,5.82182721 6.7195317,6.1145489 6.59062481,6.50126958 C6.46887941,6.905894 6.23792469,7.10820317 5.89775372,7.10820317 C5.69723188,7.10820317 5.52804412,7.03748448 5.39018536,6.89604497 C5.25232659,6.75460546 5.18339825,6.60153082 5.18339825,6.43681645 Z"></path>
+                                <path d="M8,0 C3.578625,0 -8.8812421e-16,3.57803125 -8.8812421e-16,8 L5.42101086e-20,15.4799995 C5.42101086e-20,15.825187 0.174812481,16 0.519999981,16 L8,16 C12.4213438,16 16,12.4219687 16,8 C16,3.578625 12.4219687,0 8,0 Z M8,14.75 L1.25,14.75 L1.25,8 C1.25,4.26946875 4.26896875,1.25 8,1.25 C11.7305313,1.25 14.75,4.26896875 14.75,8 C14.75,11.7305313 11.7310312,14.75 8,14.75 Z" fill-opacity="0.3"></path>
+                            </g>
+                        </g>
+                    </svg>
+                </span>
+                <!-- Help Icon Container End -->
+                <h1 class="text-[20px] font-bold text-[#164085]">What are use cases where AI is highly effective for businesses?</h1>
+            </div>
+            <p class="text-[#3D3D3D] text-base py-3 sm:px-10 md:px-7 lg:px-10 xl:px-11 ">
+                Customer support chatbot, AI-based search, Reporting automation, Workflow automation, and much more
+            </p>
+        </div>
+      </div>
+       
+      <div class="py-4 px-2 flex">
+        <div class="flex flex-col">
+            <div class="sm:flex sm:items-center sm:gap-2">
+                <!-- Help Icon Container -->
+                <span class="hidden sm:block max-[500px]:hidden w-10 h-10 rounded-full hover:bg-blue-200
+                 transition duration-300 flex items-center justify-center">
+                    <svg width="20px" height="20px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                        <g fill="none" fill-rule="evenodd">
+                            <g fill="#164085" class="fill-main">
+                                <path d="M7.7549375,10.725625 C7.29746875,10.725625 6.92709375,11.106875 6.92709375,11.564375 C6.92709375,12.0109687 7.2865625,12.403125 7.7549375,12.403125 C8.2233125,12.403125 8.5936875,12.011 8.5936875,11.564375 C8.5936875,11.106875 8.21246875,10.725625 7.7549375,10.725625 Z"></path>
+                                <path d="M5.18339825,6.43681645 C5.18339825,6.09664548 5.29260939,5.75200375 5.51103497,5.40288091 C5.72946054,5.05375807 6.04814225,4.76461708 6.46708965,4.53544927 C6.88603706,4.30628145 7.3748017,4.19169927 7.93339825,4.19169927 C8.45260657,4.19169927 8.91093532,4.28748281 9.30839825,4.47905278 C9.70586117,4.67062275 10.0129056,4.93111819 10.2295408,5.26054692 C10.446176,5.58997565 10.554492,5.94804499 10.554492,6.33476567 C10.554492,6.63912917 10.492725,6.90589083 10.3691893,7.13505864 C10.2456535,7.36422645 10.0988451,7.56205976 9.92875957,7.7285645 C9.75867409,7.89506924 9.45341998,8.17525849 9.01298809,8.56914067 C8.89124269,8.68014383 8.7936688,8.77771773 8.72026348,8.86186528 C8.64685817,8.94601284 8.59225259,9.02299775 8.55644512,9.09282231 C8.52063765,9.16264688 8.49288728,9.2324704 8.47319317,9.30229497 C8.45349906,9.37211954 8.42395834,9.49475828 8.38457012,9.67021489 C8.31653593,10.0426126 8.10348467,10.2288086 7.74540997,10.2288086 C7.55921112,10.2288086 7.40255578,10.1679369 7.27543926,10.0461915 C7.14832274,9.92444605 7.08476543,9.74362104 7.08476543,9.50371099 C7.08476543,9.20292823 7.13131445,8.94243279 7.22441387,8.72221684 C7.3175133,8.5020009 7.44104722,8.30864346 7.59501934,8.14213872 C7.74899146,7.97563398 7.95667168,7.77780067 8.21806622,7.54863286 C8.44723403,7.34811102 8.6128411,7.19682673 8.71489239,7.09477544 C8.81694368,6.99272415 8.90288032,6.87903713 8.97270489,6.75371099 C9.04252946,6.62838484 9.07744122,6.49231849 9.07744122,6.34550786 C9.07744122,6.05904809 8.97091559,5.81735129 8.75786114,5.6204102 C8.54480669,5.42346912 8.26998847,5.32500005 7.93339825,5.32500005 C7.53951607,5.32500005 7.24947991,5.42436429 7.06328106,5.62309575 C6.87708221,5.82182721 6.7195317,6.1145489 6.59062481,6.50126958 C6.46887941,6.905894 6.23792469,7.10820317 5.89775372,7.10820317 C5.69723188,7.10820317 5.52804412,7.03748448 5.39018536,6.89604497 C5.25232659,6.75460546 5.18339825,6.60153082 5.18339825,6.43681645 Z"></path>
+                                <path d="M8,0 C3.578625,0 -8.8812421e-16,3.57803125 -8.8812421e-16,8 L5.42101086e-20,15.4799995 C5.42101086e-20,15.825187 0.174812481,16 0.519999981,16 L8,16 C12.4213438,16 16,12.4219687 16,8 C16,3.578625 12.4219687,0 8,0 Z M8,14.75 L1.25,14.75 L1.25,8 C1.25,4.26946875 4.26896875,1.25 8,1.25 C11.7305313,1.25 14.75,4.26896875 14.75,8 C14.75,11.7305313 11.7310312,14.75 8,14.75 Z" fill-opacity="0.3"></path>
+                            </g>
+                        </g>
+                    </svg>
+                </span>
+                <!-- Help Icon Container End -->
+                <h1 class="text-[20px] font-bold text-[#164085]">What are use cases where AI is highly effective for businesses?</h1>
+            </div>
+            <p class="text-[#3D3D3D] text-base py-3 sm:px-10 md:px-7 lg:px-10 xl:px-11 ">
+                Customer support chatbot, AI-based search, Reporting automation, Workflow automation, and much more
+            </p>
+        </div>
+      </div>
+
+      
+      <div class="py-4 px-2 flex">
+        <div class="flex flex-col">
+            <div class="sm:flex sm:items-center sm:gap-2">
+                <!-- Help Icon Container -->
+                <span class="hidden sm:block max-[500px]:hidden w-10 h-10 rounded-full hover:bg-blue-200
+                 transition duration-300 flex items-center justify-center">
+                    <svg width="20px" height="20px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                        <g fill="none" fill-rule="evenodd">
+                            <g fill="#164085" class="fill-main">
+                                <path d="M7.7549375,10.725625 C7.29746875,10.725625 6.92709375,11.106875 6.92709375,11.564375 C6.92709375,12.0109687 7.2865625,12.403125 7.7549375,12.403125 C8.2233125,12.403125 8.5936875,12.011 8.5936875,11.564375 C8.5936875,11.106875 8.21246875,10.725625 7.7549375,10.725625 Z"></path>
+                                <path d="M5.18339825,6.43681645 C5.18339825,6.09664548 5.29260939,5.75200375 5.51103497,5.40288091 C5.72946054,5.05375807 6.04814225,4.76461708 6.46708965,4.53544927 C6.88603706,4.30628145 7.3748017,4.19169927 7.93339825,4.19169927 C8.45260657,4.19169927 8.91093532,4.28748281 9.30839825,4.47905278 C9.70586117,4.67062275 10.0129056,4.93111819 10.2295408,5.26054692 C10.446176,5.58997565 10.554492,5.94804499 10.554492,6.33476567 C10.554492,6.63912917 10.492725,6.90589083 10.3691893,7.13505864 C10.2456535,7.36422645 10.0988451,7.56205976 9.92875957,7.7285645 C9.75867409,7.89506924 9.45341998,8.17525849 9.01298809,8.56914067 C8.89124269,8.68014383 8.7936688,8.77771773 8.72026348,8.86186528 C8.64685817,8.94601284 8.59225259,9.02299775 8.55644512,9.09282231 C8.52063765,9.16264688 8.49288728,9.2324704 8.47319317,9.30229497 C8.45349906,9.37211954 8.42395834,9.49475828 8.38457012,9.67021489 C8.31653593,10.0426126 8.10348467,10.2288086 7.74540997,10.2288086 C7.55921112,10.2288086 7.40255578,10.1679369 7.27543926,10.0461915 C7.14832274,9.92444605 7.08476543,9.74362104 7.08476543,9.50371099 C7.08476543,9.20292823 7.13131445,8.94243279 7.22441387,8.72221684 C7.3175133,8.5020009 7.44104722,8.30864346 7.59501934,8.14213872 C7.74899146,7.97563398 7.95667168,7.77780067 8.21806622,7.54863286 C8.44723403,7.34811102 8.6128411,7.19682673 8.71489239,7.09477544 C8.81694368,6.99272415 8.90288032,6.87903713 8.97270489,6.75371099 C9.04252946,6.62838484 9.07744122,6.49231849 9.07744122,6.34550786 C9.07744122,6.05904809 8.97091559,5.81735129 8.75786114,5.6204102 C8.54480669,5.42346912 8.26998847,5.32500005 7.93339825,5.32500005 C7.53951607,5.32500005 7.24947991,5.42436429 7.06328106,5.62309575 C6.87708221,5.82182721 6.7195317,6.1145489 6.59062481,6.50126958 C6.46887941,6.905894 6.23792469,7.10820317 5.89775372,7.10820317 C5.69723188,7.10820317 5.52804412,7.03748448 5.39018536,6.89604497 C5.25232659,6.75460546 5.18339825,6.60153082 5.18339825,6.43681645 Z"></path>
+                                <path d="M8,0 C3.578625,0 -8.8812421e-16,3.57803125 -8.8812421e-16,8 L5.42101086e-20,15.4799995 C5.42101086e-20,15.825187 0.174812481,16 0.519999981,16 L8,16 C12.4213438,16 16,12.4219687 16,8 C16,3.578625 12.4219687,0 8,0 Z M8,14.75 L1.25,14.75 L1.25,8 C1.25,4.26946875 4.26896875,1.25 8,1.25 C11.7305313,1.25 14.75,4.26896875 14.75,8 C14.75,11.7305313 11.7310312,14.75 8,14.75 Z" fill-opacity="0.3"></path>
+                            </g>
+                        </g>
+                    </svg>
+                </span>
+                <!-- Help Icon Container End -->
+                <h1 class="text-[20px] font-bold text-[#164085]">What are use cases where AI is highly effective for businesses?</h1>
+            </div>
+            <p class="text-[#3D3D3D] text-base py-3 sm:px-10 md:px-7 lg:px-10 xl:px-11 ">
+                Customer support chatbot, AI-based search, Reporting automation, Workflow automation, and much more
+            </p>
+        </div>
+      </div>
+
         
     </div>
 
@@ -326,14 +477,14 @@
 
 
 <!-- Ready to transform your business Page Start -->
-<div  id="Ready-transform">
+<div class="xl:px-32" id="Ready-transform">
   <div class="flex flex-col justify-center items-center">
     <div class="border md:border-2 border-white p-3 w-[80%] md:w-[80%] mx-6 my-20 md:my-16 rounded-md " >
         <div class="sm:flex sm:justify-center sm:items-center">
-            <h1 class="text-center text-white py-6 text-xl sm:text-3xl font-bold px-4 sm:px-0 sm:w-80 md:w-96">Ready to transform your business with AI?</h1>
+            <h1 class="text-center text-white py-6 text-2xl font-bold px-4 sm:px-0 sm:w-80 md:w-96">Ready to transform your business with AI?</h1>
         </div>
         <div>
-            <p class="text-center font-bold text-white">Get in touch with us today.</p>
+            <p class="text-center font-bold text-base text-white">Get in touch with us today.</p>
         </div>
         <div class="flex justify-center items-center my-6">
             <button class="text-sm px-2 py-2 mx-4 border-2 border-[#164085] rounded-md bg-white text-[#164085]
@@ -348,18 +499,18 @@
 
 
 <!-- Footer page Start-->
- <footer class="absolute w-full md:w-full md:flex md:justify-between bg-[#202224] text-white">
+ <footer class="absolute w-full md:w-full md:flex md:justify-between bg-[#303030] text-white xl:px-32 xl:py-6">
   <div class="mx-5 p-5 flex flex-col justify-center items-center md:justify-start md:items-start">
-    <img src="https://unicorn-images.b-cdn.net/ae7276d6-eb11-4dad-a4b4-8fe9a1104477?optimizer=gif&width=159&height=37" 
-    class="" alt="">
+    <img src="Images/3.png" 
+    class="h-[40px]" alt="">
      <p class="text-base my-4 text-center md:text-left">© 2024 BYCLARITY TECHNOLOGY & CONSULTIGN PVT LTD. All rights reserved.</p>
   </div>
   <div class=" pb-5 md:my-10 mx-5  ">
     <ul class="flex justify-center items-center gap-4">
-      <li><i class="fa-brands fa-facebook" id="icon-1"></i></li>
-      <li><i class="fa-brands fa-instagram" id="icon-2"></i></li>
-      <li><i class="fa-brands fa-twitter" id="icon-3"></i></li>
-      <li><i class="fa-brands fa-tiktok" id="icon-4"></i></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
     </ul>
   </div>
   
